@@ -1,0 +1,9 @@
+asgiref==3.8.1
+Django==5.1.5
+djangorestframework
+python-decouple==3.8
+sqlparse==0.5.3
+joblib
+numpy
+scikit-learn
+django-cors-headers
