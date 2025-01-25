@@ -59,11 +59,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    origin.strip() for origin in config("CORS_ALLOWED_ORIGINS", default="").split(",") if origin.strip()
-]
-
-print("CORS_ALLOWED_ORIGINS:", CORS_ALLOWED_ORIGINS)
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'project_config.urls'
 
